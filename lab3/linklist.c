@@ -4,13 +4,15 @@
 
 int ShowAllCmd(tDataNode *head)
 {
-    printf("Menu list:\n");
+    printf("\n");
+    printf("***************Menu List***************\n");
     tDataNode *p = head;
     while(p != NULL)
     {
-	printf("%s - %s\n", p->cmd, p->desc);
+	printf("%s\t- %s\n", p->cmd, p->desc);
 	p = p->next;
     }
+    printf("***************************************\n");
     return 0;
 }
 
